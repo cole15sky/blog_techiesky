@@ -1,0 +1,12 @@
+body {
+  background-color: rgba(14, 199, 227, 0.604);
+}
+
+h1 {
+  color: blue;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  border: 2px solid powderblue;
+  margin: 20px;
+  position: relative;
+}
