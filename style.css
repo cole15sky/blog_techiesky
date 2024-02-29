@@ -3,7 +3,11 @@ body {
   background-color: rgba(14, 199, 227, 0.604);
 }
 
+/* heading css */
 h1 {
+  border-style: groove;
+  border-radius: 5px;
+  text-align: center;
   color: blue;
   font-style: italic;
   font-family: 'Times New Roman', Times, serif;
