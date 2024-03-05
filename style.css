@@ -10,7 +10,6 @@
 
 
 
-
 body{
 min-height: 100vh; 
 background: url(./image/lakeside.JPG) no-repeat; 
@@ -59,21 +58,89 @@ header .navbar ul li{
 header .navbar ul li a{
   font-size: 20px;
   padding: 20px;;
-  color: #6026e9fb;
+  color:#6026e9fb;
   display: block;
 }
 header .navbar ul li a:hover{
-  background: olive;
-  color: #3f1ea1;
+  background: #333;
+  color: #fff;
+}
 
+header .navbar ul li ul{
+  position: absolute;
+  left:0;
+  width:200px;
+  background: #fff;
+  display: none;
 
-
-
+}
+header .navbar ul li ul li{
+  width: 100%;
+  border-top: 1px solid #000;
+}
+header .navbar ul li ul li ul {
+  left: 200px;
+  top: 0;
 }
 
 
+header .navbar ul li:focus-within >ul,
+header .navbar ul li:hover >ul{
+  display:initial;
+}
 
+#menu-bar{
+  display:none;
+}
 
+header label{
+  font-size:20px;
+  color: #333;
+  cursor: pointer;
+  display: none;
+
+}
+
+@media(max-width:991px){
+  header{
+    padding:20px;
+  }
+}
+header label{
+  display: initial;
+}
+
+header.navbar{
+  position: absolute;
+  top: 100%; left:0; right: 0;
+  background: #fff;
+  border-top: 1px solid rgba(0,0,0,.1);
+  display: none;
+}
+header .navbar ul li{
+  width:100%;
+
+}
+header .navbar ul li ul{
+  position: relative;
+  width: 100%;
+
+}
+
+header .navbar ul li ul li{
+  background: #eee;
+
+}
+
+header .navbar ul li ul li ul{
+  width: 100%;
+
+}
+
+#menu-bar :checked ~ .navbar{
+  display:initial;
+
+}
 
 
 #para {
