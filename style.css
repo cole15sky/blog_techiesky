@@ -1,37 +1,82 @@
-body {
-  font-family: Copperplate, Papyrus, fantasy;
+*{
+  margin: 0;
+  padding: 0;
+  font-family:Chalkduster, fantasy;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
 
-  position: relative;
-  background-color: rgba(14, 199, 227, 0.604);
 }
 
 
 
-/* heading css */
-h1 { 
+
+body{
+min-height: 100vh; 
+background: url(./image/lakeside.JPG) no-repeat; 
+background-size: cover;
+background-position: center;
+}
+
+
+
+/* h1 {
   text-align: center;
   margin: auto;
   width: 60%;
   border: 3px solid #73AD21;
   padding: 10px;
+} */
+
+header{
+  position: fixed;
+  top: 0;left: 0; right:0;
+  background: #ffffff ;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  padding: 0px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
 }
 
-a.highlight:hover {
-  color: #ff0000;
-  font-size: 22px;
-} 
 
-.intro{
-  text-align: center
+header .logo{
+  font-weight: bolder;
+  font-size: 25px;
+   color: darkblue;
+
+}
+header .navbar ul{
+   list-style: none;
+  
+}
+header .navbar ul li{
+  position: relative;
+  float: left;
+
+}
+header .navbar ul li a{
+  font-size: 20px;
+  padding: 20px;;
+  color: #6026e9fb;
+  display: block;
+}
+header .navbar ul li a:hover{
+  background: olive;
+  color: #3f1ea1;
+
+
+
+
 }
 
-.intro::first-letter{
-  color: #ff0000;
-  font-size: 200%;}
 
 
 
-#para{
+
+
+#para {
   position: relative;
   margin: 20px;
   padding: 20px;
