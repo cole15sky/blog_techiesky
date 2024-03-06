@@ -8,30 +8,19 @@
 
 }
 
-
-
 body{
 min-height: 100vh; 
 background: url(./image/lakeside.JPG) no-repeat; 
 background-size: cover;
-background-position: center;
+background-position: center; 
 }
-
-
-
-/* h1 {
-  text-align: center;
-  margin: auto;
-  width: 60%;
-  border: 3px solid #73AD21;
-  padding: 10px;
-} */
+ 
 
 header{
   position: fixed;
   top: 0;left: 0; right:0;
   background: #ffffff ;
-  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  box-shadow: 0 5px 10px rgba(67, 101, 59, 0.577);
   padding: 0px 7%;
   display: flex;
   align-items: center;
@@ -43,7 +32,7 @@ header{
 header .logo{
   font-weight: bolder;
   font-size: 25px;
-   color: darkblue;
+   color: skyblue;
 
 }
 header .navbar ul{
@@ -58,11 +47,11 @@ header .navbar ul li{
 header .navbar ul li a{
   font-size: 20px;
   padding: 20px;;
-  color:#6026e9fb;
+  color: #6026e9fb;
   display: block;
 }
 header .navbar ul li a:hover{
-  background: #333;
+  background: #333333c5;
   color: #fff;
 }
 
@@ -76,7 +65,7 @@ header .navbar ul li ul{
 }
 header .navbar ul li ul li{
   width: 100%;
-  border-top: 1px solid #000;
+  border-top: 1px solid rgba(0,0,0,.1);
 }
 header .navbar ul li ul li ul {
   left: 200px;
@@ -89,9 +78,6 @@ header .navbar ul li:hover >ul{
   display:initial;
 }
 
-#menu-bar{
-  display:none;
-}
 
 header label{
   font-size:20px;
@@ -132,17 +118,96 @@ header .navbar ul li ul li{
 
 }
 
-header .navbar ul li ul li ul{
-  width: 100%;
+/* BODY */
 
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0; /* Set a background color */
 }
 
-#menu-bar :checked ~ .navbar{
-  display:initial;
+header {
+  background-color: #333; /* Set a background color */
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
 
+.logo {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  color: #90caf9; /* Change color on hover */
+}
+
+.intro {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: white;
+}
+
+#para {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: white;
+}
+
+figure {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+}
+
+/* Add responsive styles for smaller screens */
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul {
+    margin-top: 10px;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+  }
 }
 
 
+
+/*  
 #para {
   position: relative;
   margin: 20px;
@@ -150,3 +215,4 @@ header .navbar ul li ul li ul{
   font-size: larger;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+   */
