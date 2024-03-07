@@ -1,19 +1,43 @@
+
+html{
+  scroll-behavior: smooth;
+  height: -webkit-fill-available;
+}
+
+
 *{
   margin: 0;
   padding: 0;
   font-family:Chalkduster, fantasy;
   box-sizing: border-box;
-  text-transform: capitalize;
+  text-transform: pitalize;
   text-decoration: none;
 
 }
 
-body{
-min-height: 100vh; 
+#home{
+  height: 1280px;
+  width: 1920px;
 background: url(./image/lakeside.JPG) no-repeat; 
 background-size: cover;
 background-position: center; 
+background-attachment: fixed;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+padding-left: 5%;
 }
+
+
+#articles{
+  height: 1280px;
+  width: 1920px;
+  background-color: skyblue;
+background-size: cover;
+background-position: center; 
+background-attachment: fixed;
+background-repeat: no-repeat;
+}
+  
+
  
 
 header{
@@ -31,8 +55,9 @@ header{
 
 header .logo{
   font-weight: bolder;
-  font-size: 25px;
-   color: skyblue;
+  font-size: 30px;
+   color: rgb(103, 3, 3);
+   padding-left: 10%;
 
 }
 header .navbar ul{
@@ -124,6 +149,7 @@ body {
   margin: 0;
   font-family: 'Arial', sans-serif;
   background-color: #f0f0f0; /* Set a background color */
+  padding-top: 100px;
 }
 
 header {
@@ -143,6 +169,10 @@ header {
 .navbar {
   display: flex;
   justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 20%;
 }
 
 .navbar ul {
@@ -207,6 +237,9 @@ h4 {
 
 
 
+
+
+
 /*  
 #para {
   position: relative;
@@ -216,3 +249,5 @@ h4 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
    */
+
+
